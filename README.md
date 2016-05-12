@@ -1,2 +1,2 @@
 # lodash-functions
-Implement a couple of lodash functions
+Implement join and map lodash functions

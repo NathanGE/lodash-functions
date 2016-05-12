@@ -1,7 +1,7 @@
 "use strict"
 
 var _ = {
-  //Implements:
+  //Implement join function
   // https://lodash.com/docs#join
   join: (array, separator) => {
     var result = '';
