@@ -4,15 +4,17 @@ var _ = {
   //Implement join function
   // https://lodash.com/docs#join
   join: (array, separator) => {
-    var result = '';
+    let result = '';
+    // default argument for separator still
+    // not working in all environments
     var separator = typeof separator !== 'undefined' ? separator : ', ';
-    array.forEach(function(value){
-      if (value === array[array.length - 1]){
+    for(let value of array){
+      if (value === array[array.length - 1]) {
         result += value;
       } else {
         result += value + separator;
       }
-    });
+    }
     return result;
   }
 }
